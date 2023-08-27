@@ -1,0 +1,29 @@
+POST http://localhost:5000/additems
+Content-Type : application/json
+
+{
+    "name" : "Refrigerator",
+    "price" : "25000"
+}
+
+###
+
+POST http://localhost:5000/addvehicles
+Content-Type : application/json
+
+{
+    "registrationNumber" : "MH20",
+    "vehicleType" : "bike",
+    "city" : "Pune",
+    "activeOrdersCount" : 1
+}
+
+###
+
+POST http://localhost:5000/findVehicle
+Content-Type : application/json
+
+{
+    "vehicleType" : "Truck",
+    "city" : "Pune"
+}
