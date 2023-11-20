@@ -14,6 +14,8 @@ router.post('/findVehicle' , (req,res) => {
     return res.status(422).json("Vehicle not available");
 })
 
+
+
 router.post('/addvehicles' , (req,res) => {
     const {registrationNumber,vehicleType,city,activeOrdersCount } = req.body;
     if(!/^[a-zA-Z0-9]/.test(registrationNumber))
