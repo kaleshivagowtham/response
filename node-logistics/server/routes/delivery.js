@@ -10,6 +10,7 @@ router.post('/findVehicle' , (req,res) => {
     .then(foundVehicle => {
         foundVehicle.activeOrdersCount;
         return res.status(200).json(foundVehicle);
+        
     })
     return res.status(422).json("Vehicle not available");
 })

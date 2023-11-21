@@ -10,6 +10,7 @@ router.post('/additems' , (req,res) => {
     console.log(price);
     Items.findOne({name : name})
     .then(foundItem => {
+        
         console.log(foundItem);
         return res.status(422).json("Item already exists");
     })

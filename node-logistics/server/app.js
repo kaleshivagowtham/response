@@ -7,6 +7,7 @@ const PORT = 5000;
 mongoose.set("strictQuery", false);
 mongoose.connect('mongodb://0.0.0.0:27017/delivery-db',
     {
+        
         useNewUrlParser: true,
         useUnifiedTopology: true
     }

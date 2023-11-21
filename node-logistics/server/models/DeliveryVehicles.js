@@ -8,6 +8,7 @@ const DeliveryVehiclesSchema = new mongoose.Schema({
         match : /^[a-zA-Z0-9]*$/,
         require : true
     },
+    
     VehicleType : {
         type : String,
         enum : ['bike','truck'],
