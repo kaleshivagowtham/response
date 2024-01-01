@@ -4,6 +4,7 @@ const DeliveryVehicles = require('../models/DeliveryVehicles');
 
 const router = express();
 
+
 router.post('/findVehicle' , (req,res) => {
     const {vehicleType,city } = req.body;
     DeliveryVehicles.findOne({city : city,vehicleType : vehicleType,activeOrdersCount:{$lt:2}})

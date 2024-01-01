@@ -14,6 +14,7 @@ const DeliveryVehiclesSchema = new mongoose.Schema({
         enum : ['bike','truck'],
         require : true
     },
+    
     city :{
         type : String,
         require : true

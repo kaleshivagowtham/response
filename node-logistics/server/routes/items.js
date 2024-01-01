@@ -14,6 +14,7 @@ router.post('/additems' , (req,res) => {
         console.log(foundItem);
         return res.status(422).json("Item already exists");
     })
+
     const item = new Items({
         name : name,
         price : price

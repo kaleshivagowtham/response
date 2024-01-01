@@ -11,6 +11,7 @@ const OrderSchema = new mongoose.Schema({
         type : mongoose.Schema.Types.ObjectId,
         require : true
     },
+    
     price : {
         type : Number,
         require : true
